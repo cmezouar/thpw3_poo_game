@@ -12,8 +12,7 @@ require_relative 'lib/player'
 def init_game
     puts "Voici l'état de chaque joueur:"
     @player1.show_state
-    @player2.show_state
-    
+    @player2.show_state  
 end
 
 def fight

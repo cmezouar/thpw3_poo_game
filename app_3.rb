@@ -4,6 +4,7 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
+# welcome message and creation of a new game
 def init_game
     puts " "
     puts "-----------------------------------------------------"
