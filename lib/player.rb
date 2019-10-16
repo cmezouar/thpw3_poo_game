@@ -89,5 +89,4 @@ class HumanPlayer < Player
 
 end
 
-human = HumanPlayer.new ("Chloé")
-binding.pry
+#binding.pry
