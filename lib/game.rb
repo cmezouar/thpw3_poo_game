@@ -91,12 +91,4 @@ class Game
 
 end
 
-game = Game.new("wolverine")
-puts game.enemies[3].name
-puts game.enemies.size
-game.show_players
-game.kill_player(game.enemies[2])
-puts game.enemies.size
-game.is_still_ongoing?
-game.show_players
-game.menu
+

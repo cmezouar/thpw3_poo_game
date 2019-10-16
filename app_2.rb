@@ -4,6 +4,7 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
+# welcome message
 def init_game
     puts " "
     puts "-----------------------------------------------------"
@@ -13,6 +14,7 @@ def init_game
     puts " "
 end
 
+# ask the user to create a player and save it
 def create_human_player
     puts "Choisis un nom pour ton joueur"
     print "> "
@@ -21,6 +23,7 @@ def create_human_player
     return human_player
 end
 
+# create the ennemies
 def init_enemies
     enemies = []
     player1 = Player.new("Alice")
@@ -30,10 +33,12 @@ def init_enemies
     return enemies
 end
 
+# show the user's life level
 def show_human_state(player)
     player.show_state
 end
 
+# ask the users' choice and store his answer
 def choose_next_move(enemy1,enemy2)
     puts "Quelle action veux-tu effectuer ?"
     puts " "
@@ -54,10 +59,12 @@ def choose_next_move(enemy1,enemy2)
     return answer
 end
 
+
 def fight (player_a,player_b)
     player_a.attacks(player_b)
 end
 
+# end of game message
 def end_game(player)
     puts "La partie est finie."
     puts " "

@@ -4,8 +4,10 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
+#creating the players
 @player1 = Player.new("Alice")
 @player2 = Player.new("Jason")
+
 
 def init_game
     puts "Voici l'état de chaque joueur:"
@@ -39,4 +41,3 @@ def game
 end
 
 game
-#binding.pry
